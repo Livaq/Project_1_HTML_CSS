@@ -1,0 +1,1880 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    outline: none;
+}
+
+@keyframes Myanimation1 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes Myanimation2 {
+    from {
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes Myanimation_scroll {
+    from {
+        margin-left: -100%;
+        animation-timing-function: linear;
+    }
+    to {
+        margin-left: 100%;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    font-family: 'Rubik', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2.2em;
+    animation: Myanimation1 1.2s;
+}
+
+h1, h2, h3, h4, h5 {
+    animation: Myanimation2 1.7s;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-weight: 800;
+}
+
+label {
+    display: block;
+}
+
+.header_container {
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    z-index: 10;
+}
+
+.location_glow {
+    color: #66cccb;
+}
+
+.header_container ul li a {
+    transition: 0.5s;
+}
+
+ul {
+    margin-bottom: 0;
+}
+
+.header_container ul li a:hover {
+    color: #66cccb;
+}
+
+.main_logo_wrap {
+    display: flex;
+    margin-left: 10%;
+    align-items: center;
+}
+
+.main_logo {
+    height: 75px;
+    margin-right: 20px;
+    animation: Myanimation2 1.7s;
+}
+
+.main_logo_content {
+    font-size: 21px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    animation: Myanimation2 1.7s;
+
+}
+
+.menu {
+    display: flex;
+    margin-right: 12%;
+    animation: Myanimation2 1.7s;
+}
+
+.menu_list {
+    padding: 15px;
+    font-weight: 800;
+}
+
+#menu {
+    font-size: 32px;
+    color: #66cccb;
+    display: none;
+    text-align: center;
+    width: 200px;
+    cursor: pointer;
+    padding: 25px;
+
+}
+
+.menu_adapt {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    animation: Myanimation2 1.7s;
+}
+
+.menu_adapt ul {
+    margin-top: 7px;
+    padding-left: 0;
+    display: none;
+    animation: Myanimation2 0.5s;
+
+}
+
+.menu_adapt ul li {
+    font-weight: 600;
+    text-align: center;
+    width: 200px;
+}
+
+.menu_adapt ul li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+
+.parallax_wrap {
+    width: 100%;
+}
+
+.parallax_effect {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax_effect_join {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax_effect_pr {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gig {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#gig_pr {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#social {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.parallax_effect > img {
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.main_info {
+    z-index: 3;
+    margin: 0 30% 0 50px;
+}
+
+.parallax_header {
+    z-index: 2;
+    color: white;
+    font-weight: 800;
+    font-size: 60px;
+    animation: Myanimation2 1.7s;
+    margin: 30px;
+    text-shadow: 3px 3px 10px black;
+}
+
+.parallax_header_pr {
+    z-index: 2;
+    color: white;
+    font-weight: 800;
+    font-size: 60px;
+    animation: Myanimation2 1.7s;
+    margin-top: 5%;
+    text-shadow: 3px 3px 10px black;
+}
+
+.parallax_content {
+    color: white;
+    z-index: 2;
+    font-size: 20px;
+    font-weight: 600;
+    animation: Myanimation2 1.7s;
+    margin: 30px;
+    line-height: 40px;
+    text-shadow: 2px 2px 5px black;
+
+}
+
+.parallax_btn {
+    z-index: 2;
+    font-size: 20px;
+    color: white;
+    border: solid white 3px;
+    border-radius: 100px;
+    font-weight: 600;
+    padding: 10px 15px;
+    animation: Myanimation2 1.7s;
+    margin: 30px;
+    display: inline-block;
+    text-shadow: 2px 2px 5px black;
+    transition: 0.5s;
+}
+
+.parallax_btn:hover {
+    border: #66cccb solid 3px;
+    border-radius: 100px;
+    opacity: 0.95;
+    transition: 0.5s;
+    color: #fafafa;
+}
+
+.animation_smoke {
+    position: absolute;
+    z-index: 2;
+    width: 200%;
+    bottom: 0;
+    margin-left: -100%;
+    animation: Myanimation_scroll 50s infinite;
+}
+
+.animation_smoke img:nth-child(1) {
+    width: 50%;
+    float: left;
+    height: 600px;
+}
+
+.animation_smoke img:nth-child(2) {
+    width: 50%;
+    float: right;
+    height: 600px;
+}
+
+.about_wrap {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 75px 0;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.about_content {
+    margin: 0 0 0 2%;
+}
+
+.container1 {
+    width: 100%;
+    background: url("../img/usa1.jpg") top left no-repeat #fafafa;
+    background-size: 50% 100%;
+
+}
+
+.about_wrap div h1 {
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 60px;
+    margin-top: 100px;
+}
+
+.about_wrap div p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #999999;
+    margin: 0 30px 100px 0;
+}
+
+.about_menu {
+    display: flex;
+    max-width: 400px;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+    margin-right: 50px;
+}
+
+.about_menu ul {
+    margin: 55px 10px 0 10px;
+    display: inline-block;
+    max-width: 200px;
+    position: relative;
+}
+
+.about_menu ul li {
+    padding: 30px 0 0 0;
+    position: relative;
+    transition: 0.5s;
+}
+
+.list2 {
+    padding-left: 20px;
+}
+
+.about_menu ul li a {
+    transition: 0.5s;
+    display: inline-block;
+    width: 200px;
+}
+
+.about_menu ul li a:hover {
+    color: #66cccb;
+    margin-left: 15px;
+    position: relative;
+    transition: 0.5s;
+}
+
+.arrow:before {
+    content: "";
+    background: url(../img/arrow1.png) top left no-repeat;
+    background-size: 30px 25px;
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    margin-right: 15px;
+}
+
+
+.container_image {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    margin-bottom: 75px;
+}
+
+.container_image div {
+    width: 33.3%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition-duration: 0.5s;
+}
+
+.shoptile-img1 {
+    background-image: url("../img/shoptile.jpg");
+}
+
+.shoptile-img2 {
+    background-image: url("../img/artiststile.jpg");
+}
+
+.shoptile-img3 {
+    background-image: url("../img/dealerstile.jpg");
+}
+
+.shoptile-header {
+    font-size: 44px;
+    color: white;
+    text-align: center;
+    transition-duration: 0.5s;
+    height: 100%;
+    padding-top: 150px;
+
+}
+
+.dot:after {
+    content: ".";
+    padding: 2px;
+    color: deepskyblue;
+    font-size: larger;
+    font-family: serif;
+
+}
+
+.shoptile-content {
+    font-size: 24px;
+    text-align: center;
+    transition-duration: 0.5s;
+    opacity: 0;
+    margin-top: -150px;
+
+}
+
+.shoptile-img1:hover {
+    background-image: url("../img/shoptile-blur.jpg");
+    z-index: 2;
+    cursor: pointer;
+}
+
+.shoptile-img1:hover .shoptile-header {
+    color: black;
+}
+
+.shoptile-img1:hover .shoptile-content {
+    color: black;
+    opacity: 1;
+}
+
+.shoptile-img2:hover {
+    background-image: url("../img/artiststile-blur.jpg");
+    z-index: 2;
+    cursor: pointer;
+}
+
+.shoptile-img2:hover .shoptile-header {
+    color: black;
+}
+
+.shoptile-img2:hover .shoptile-content {
+    color: black;
+    opacity: 1;
+}
+
+.shoptile-img3:hover {
+    background-image: url("../img/dealerstile-blur.jpg");
+    z-index: 2;
+    cursor: pointer;
+}
+
+.shoptile-img3:hover .shoptile-header {
+    color: black;
+}
+
+.shoptile-img3:hover .shoptile-content {
+    color: black;
+    opacity: 1;
+}
+
+
+.featured {
+    font-size: 40px;
+    font-weight: 800;
+    margin: 75px auto 75px auto;
+    display: table;
+}
+
+.carousel {
+    width: 30%;
+    margin: 0 auto;
+    height: 600px;
+}
+
+.carousel_content {
+    margin-top: 30px;
+}
+
+.carousel_content h3 {
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin: 0 0 0 10%;
+}
+
+.carousel_content p {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 20px 0 20px 10%;
+}
+
+.carousel_content a {
+    font-size: 24px;
+    font-weight: 600;
+    display: block;
+    float: right;
+    margin: 15px 75px 0 0;
+    transition: 0.5s;
+}
+
+.carousel_content a:hover {
+    color: #66cccb;
+
+}
+
+.carousel-control-next, .carousel-control-prev {
+    margin-top: -140px;
+}
+
+.w-100 {
+    width: 80% !important;
+    margin: 0 10% 0 10%;
+}
+
+
+.instagram_wrap {
+    max-width: 1200px;
+    margin: 100px auto -100px auto;
+}
+
+
+.instagram_wrap p:nth-child(1) {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1.3em;
+    margin: 75px 0 75px 0;
+}
+
+.instagram_wrap p:nth-child(2) {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 1.3em;
+    margin: 0 0 75px 75px;
+    position: relative;
+}
+
+.instagram_wrap p:nth-child(2) i {
+    font-size: 64px;
+    position: absolute;
+    top: -23px;
+    left: -70px;
+}
+
+.instagram_pict div {
+    text-align: center;
+}
+
+.instagram_pict div a {
+    height: 287px;
+    width: 285px;
+    display: inline-block;
+    opacity: 1;
+    margin: 0 5px 0 5px;
+    transition: 0.5s;
+}
+
+.instagram_pict div a:hover {
+    opacity: 0.85;
+}
+
+.instagram_pict div:nth-child(1) a:nth-child(1) {
+    background: url("../img/inst1.jpg");
+    background-size: cover;
+}
+
+.instagram_pict div:nth-child(1) a:nth-child(2) {
+    background: url("../img/inst2.jpg");
+    background-size: cover;
+}
+
+.instagram_pict div:nth-child(1) a:nth-child(3) {
+    background: url("../img/inst3.jpg");
+    background-size: cover;
+}
+
+.instagram_pict div:nth-child(1) a:nth-child(4) {
+    background: url("../img/inst4.jpg");
+    background-size: cover;
+}
+
+.instagram_pict div:nth-child(2) a:nth-child(1) {
+    background: url("../img/inst5.jpg");
+    background-size: cover;
+}
+
+.instagram_pict div:nth-child(2) a:nth-child(2) {
+    background: url("../img/inst6.jpg");
+    background-size: cover;
+}
+
+.instagram_pict div:nth-child(2) a:nth-child(3) {
+    background: url("../img/inst7.jpg");
+    background-size: cover;
+}
+
+.instagram_pict div:nth-child(2) a:nth-child(4) {
+    background: url("../img/inst8.jpg");
+    background-size: cover;
+}
+
+.instagram_pict div:nth-child(3) a:nth-child(1) {
+    background: url("../img/inst9.jpg");
+    background-size: cover;
+}
+
+.instagram_pict div:nth-child(3) a:nth-child(2) {
+    background: url("../img/inst10.jpg");
+    background-size: cover;
+}
+
+.instagram_pict div:nth-child(3) a:nth-child(3) {
+    background: url("../img/inst11.jpg");
+    background-size: cover;
+}
+
+.instagram_pict div:nth-child(3) a:nth-child(4) {
+    background: url("../img/inst12.jpg");
+    background-size: cover;
+}
+
+.instagram_pict div:nth-child(3) {
+    margin-bottom: 75px;
+}
+
+
+.parallax_header2 {
+    z-index: 2;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1.3em;
+    font-size: 38px;
+    margin: 200px 20px 20px 0;
+    text-shadow: 3px 3px 10px black;
+}
+
+.parallax_content2 {
+    color: white;
+    z-index: 2;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 40px 70px 50px 0;
+    text-shadow: 2px 2px 5px black;
+
+}
+
+.social_logos {
+    z-index: 2;
+    width: 300px;
+    height: 62px;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 20px 20px 0;
+}
+
+
+.social_logos a img {
+    width: 44px;
+    height: 50px;
+    display: inline-block;
+}
+
+.social_logos a {
+    transition: 0.5s;
+}
+
+.social_logos a:hover {
+    margin-top: -15px;
+}
+
+.social_forms {
+    z-index: 2;
+    width: 35%;
+    margin: 190px 5% 0 0;
+    animation: Myanimation2 1.7s;
+}
+
+.social_forms form label input {
+    width: 100%;
+    border-radius: 50px 50px 50px 50px;
+    overflow: hidden;
+    -webkit-appearance: none;
+    appearance: none;
+    padding: 14px 4%;
+    font-size: 16px;
+    color: #666666;
+    background-color: #ffffff;
+    font-weight: 400;
+    border-width: 0;
+    margin: 0 0 25px 0;
+}
+
+.social_content {
+    z-index: 2;
+    margin: 50px 0 0 5%;
+    animation: Myanimation2 1.7s;
+    width: 50%;
+}
+
+.submit {
+    width: 100%;
+    color: #ffffff;
+    border-radius: 50px;
+    letter-spacing: 6px;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0.3em 1em;
+    line-height: 1.7em;
+    background-color: transparent;
+    position: relative;
+    border: 3px solid #ffffff;
+    transition: 0.3s;
+}
+
+.submit:hover {
+    border: 3px solid #66cccb;
+    cursor: pointer;
+
+}
+
+.footer_wrap {
+    background-color: black;
+    height: 500px;
+    position: relative;
+    border-top: 3px solid #66cccb;
+    padding-top: 100px;
+    z-index: 2;
+}
+
+.footer_wrap:before {
+    background: url(../img/sound-bar.svg) repeat-x;
+    background-size: 840px 200px;
+    display: block;
+    content: "";
+    height: 200px;
+    width: 100%;
+    top: 0;
+    margin-top: -101px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    color: #666;
+    height: 270px;
+    max-width: 1200px;
+    margin: 50px auto 0 200px;
+}
+
+.footer_content div ul li {
+    margin-bottom: 10px;;
+}
+
+.footer_content div ul li a {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+    color: #666;
+    transition: 0.5s;
+}
+
+.footer_content div ul li:nth-child(1) {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.footer_content div ul li a:hover {
+    color: #ffffff;
+}
+
+.lower_footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: #666 solid 1px;
+    height: 70px;
+}
+
+.copyright {
+    color: #666;
+    width: 400px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.social_logos_mini {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social_logos_mini a i {
+    transition: 1s;
+    color: #666;
+    font-size: 28px;
+}
+
+.social_logos_mini a i:hover {
+    color: #66cccb;
+}
+
+.scroll_up {
+    width: 40px;
+    height: 45px;
+    background: url("../img/scroll-pick.svg") no-repeat;
+    background-size: cover;
+    font-size: 18px;
+    position: fixed;
+    z-index: 10;
+    top: 80%;
+    right: 20px;
+    animation: Myanimation2 1.7s;
+}
+
+a .scroll_up i {
+    color: #fafafa;
+    margin: 10px 0 0 12px;
+    display: inline-block;
+}
+
+
+.header_mini_pr {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    margin: 100px auto;
+}
+
+.amps_container {
+    width: 100%;
+}
+
+.amps_container div div div {
+    font-size: 16px;
+    font-weight: 600;
+    color: #999999;
+    margin: 20px 0 0 0;
+    height: 50px;
+}
+
+.find_out {
+    font-size: 18px;
+    font-weight: 600;
+    float: right;
+    transition: 0.5s;
+    margin-top: 20px;
+
+}
+
+.find_out:hover {
+    color: #66cccb;
+}
+
+.amps_top {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.amps_top .products3:nth-child(2) {
+    margin: 0 100px 0 100px;
+}
+
+.products3 {
+    width: 33%;
+}
+
+.products3:nth-child(1) a:nth-child(1) {
+    background: url("../img/ToneKing_FalconGrande_pr.jpg") no-repeat;
+    display: block;
+    width: 100%;
+    height: 400px;
+    background-size: contain;
+
+}
+
+.products3:nth-child(1) a:nth-child(1):hover {
+    background: url("../img/ToneKing_FalconGrande_pr_hov.jpg") no-repeat;
+    display: block;
+    width: 100%;
+    height: 400px;
+    background-size: contain;
+
+}
+
+.products3:nth-child(2) a:nth-child(1) {
+    background: url("../img/ToneKing_Gremlin_pr.jpg") no-repeat;
+    display: block;
+    width: 100%;
+    height: 400px;
+    background-size: contain;
+
+}
+
+.products3:nth-child(2) a:nth-child(1):hover {
+    background: url("../img/ToneKing_Gremlin_pr_hov.jpg") no-repeat;
+    display: block;
+    width: 100%;
+    height: 400px;
+    background-size: contain;
+
+}
+
+.products3:nth-child(3) a:nth-child(1) {
+    background: url("../img/ToneKing_SkyKing_pr.jpg") no-repeat;
+    display: block;
+    width: 100%;
+    height: 400px;
+    background-size: contain;
+}
+
+.products3:nth-child(3) a:nth-child(1):hover {
+    background: url("../img/ToneKing_SkyKing_pr_hov.jpg") no-repeat;
+    display: block;
+    width: 100%;
+    height: 400px;
+    background-size: contain;
+}
+
+
+.amps_bottom {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    margin: 75px auto;
+}
+
+.products2 {
+    width: 29%;
+}
+
+.products2:nth-child(1) a:nth-child(1) {
+    background: url("../img/ToneKing_Imperial_MarkII2_pr.jpg") no-repeat;
+    display: block;
+    width: 100%;
+    height: 400px;
+    background-size: contain;
+}
+
+.products2:nth-child(1) a:nth-child(1):hover {
+    background: url("../img/ToneKing_Imperial_MarkII.jpg") no-repeat;
+    display: block;
+    width: 100%;
+    height: 400px;
+    background-size: contain;
+}
+
+.products2:nth-child(2) a:nth-child(1) {
+    background: url("../img/TONEKING-Imperial_head_pr.jpg") no-repeat;
+    display: block;
+    width: 100%;
+    height: 400px;
+    background-size: contain;
+}
+
+.products2:nth-child(2) a:nth-child(1):hover {
+    background: url("../img/TONEKING-Imperial_head_pr_hov.jpg") no-repeat;
+    display: block;
+    width: 100%;
+    height: 400px;
+    background-size: contain;
+}
+
+.amps_bottom .products2:nth-child(1) {
+    margin: 0 0 0 50px;
+}
+
+.amps_bottom .products2:nth-child(2) {
+    margin: 0 50px 0 0;
+}
+
+#Iron1 {
+    background: url("../img/ToneKing_IronMan-II_Mini_pr.jpg") no-repeat;
+    display: block;
+    width: 100%;
+    height: 400px;
+    background-size: contain;
+}
+
+#Iron1:hover {
+    background: url("../img/ToneKing_IronMan-II_Mini_pr_hov.jpg") no-repeat;
+    display: block;
+    width: 100%;
+    height: 400px;
+    background-size: contain;
+}
+
+#Iron2 {
+    background: url("../img/ToneKing_IronMan_100_pr.jpg") no-repeat;
+    display: block;
+    width: 100%;
+    height: 400px;
+    background-size: contain;
+}
+
+#Iron2:hover {
+    background: url("../img/ToneKing_IronMan_100_pr_hov.jpg") no-repeat;
+    display: block;
+    width: 100%;
+    height: 400px;
+    background-size: contain;
+}
+
+#Cab {
+    background: url("../img/TONEKING-Imperial_1x12_pr.jpg") no-repeat;
+    display: block;
+    width: 100%;
+    height: 400px;
+    background-size: contain;
+}
+
+#Cab:hover {
+    background: url("../img/TONEKING-Imperial_1x12_pr_hov.jpg") no-repeat;
+    display: block;
+    width: 100%;
+    height: 400px;
+    background-size: contain;
+}
+
+.cabs {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    margin: 75px auto 0 auto;
+}
+
+.artists_wrap {
+    width: 100%;
+}
+
+.artists {
+    max-width: 1200px;
+    margin: 75px auto;
+}
+
+.artists h5 {
+    font-size: 21px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.artists p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #999999;
+}
+
+.artists_search {
+    display: block;
+    border-radius: 200px;
+    border: solid 3px #eaeaea;
+    width: 100%;
+    font-size: 16px;
+    padding: 1.5em;
+    outline: none;
+    margin-left: -20px;
+}
+
+.artists_list {
+    padding: 75px 0 0 0;
+    list-style: none;
+    column-count: 2;
+    column-gap: 10px;
+}
+
+.artists_list li {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.artists_list li img {
+    border-radius: 200px;
+    width: 200px;
+    height: auto;
+    margin-right: 30px;
+}
+
+.artists_details h4 {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.artists_details a {
+    font-size: 16px;
+    font-weight: 800;
+    color: #66cccb;
+}
+
+.contact_wrap {
+    width: 100%;
+}
+
+.contact_content {
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+.contact_content img {
+    width: 160px;
+    height: 100px;
+    display: block;
+    margin: 50px auto;
+    animation: Myanimation2 1.7s;
+}
+
+.contact_content p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #999999;
+}
+
+.contact_staff {
+    max-width: 1200px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact_staff div h5 {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: 0 0 20px 0;
+}
+
+.contact_staff div a {
+    font-size: 16px;
+    font-weight: 600;
+    color: #66cccb;
+}
+
+.contact_staff div:nth-child(3) {
+    margin-right: 20%;
+}
+
+.message_us {
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+.message_us h1 {
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 0 75px 0;
+    animation: Myanimation2 1.7s;
+}
+
+.message_us_form form div {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.message_us_form form div label input {
+    display: block;
+    border-radius: 200px;
+    border: solid 2px #eaeaea;
+    font-size: 16px;
+    padding: 1.5em;
+    outline: none;
+    width: 100%;
+}
+
+.message_us_form form div label {
+    width: 100%;
+    margin: 10px 50px 0 10px;
+}
+
+.message_us_form form label textarea {
+    display: block;
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    overflow: paged-y;
+    border: solid 2px #eaeaea;
+    outline: none;
+    padding: 20px;
+    font-size: 16px;
+    resize: none;
+}
+
+.submit_message_us {
+    border-radius: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    border: 3px solid #66cccb;
+    background-color: transparent;
+    padding: 10px 20px;
+    color: #66cccb;
+    float: right;
+    margin-top: 30px;
+}
+
+.dealers_wrap {
+    width: 100%;
+}
+
+.dealers_container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.dealers_container h5 {
+    font-size: 21px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin: 100px 0 75px 0;
+}
+
+.dealers_container form label input {
+    display: block;
+    border-radius: 200px;
+    border: solid 2px #eaeaea;
+    font-size: 18px;
+    padding: 20px;
+    outline: none;
+    width: 100%;
+    margin-bottom: 75px;
+}
+
+.map_container {
+    display: flex;
+    justify-content: center;
+}
+
+.dealers_list {
+    height: 600px;
+    overflow: auto;
+}
+
+.dealers_list ul {
+    padding-left: 0;
+}
+
+.dealers_list ul li {
+    padding: 15px 25px 15px 5px;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.map iframe {
+    width: 900px;
+}
+
+.dealers_list ul li a {
+    display: block;
+    height: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #444;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.dealers_list ul li:hover {
+    background-color: #66cccb;
+}
+
+.dealers_list ul li:hover a {
+    color: #fafafa;
+}
+
+.media_wrap {
+    width: 100%;
+}
+
+.media_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.media_container h5 {
+    font-size: 21px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 100px auto;
+
+}
+
+.video {
+    margin-bottom: 100px;
+}
+
+.video h4 {
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 40px auto;
+    animation: Myanimation2 1.7s;
+}
+
+.video iframe {
+    width: 80%;
+    height: 600px;
+    margin: 0 auto;
+    animation: Myanimation2 1s;
+}
+
+.video:nth-child(3) {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 1220px) {
+    .main_logo_content {
+        font-size: 16px;
+    }
+
+    .main_logo_wrap {
+        margin-left: 2%;
+    }
+
+    .parallax_header {
+        font-size: 48px;
+    }
+
+    .menu {
+        margin-right: 3%;
+    }
+
+    .menu_list {
+        padding: 10px;
+    }
+
+    .amplifier {
+        width: 800px;
+        height: 500px;
+    }
+
+    .about_menu ul li {
+        padding: 50px 0 0 0;
+    }
+
+    .shoptile-header {
+        font-size: 36px;
+    }
+
+    .shoptile-content {
+        font-size: 18px;
+    }
+
+    .carousel {
+        width: 50%;
+    }
+
+    .instagram_wrap p:nth-child(1) {
+        margin: 75px 0 75px 20px;
+    }
+
+    .instagram_wrap p:nth-child(2) {
+        margin: 0 0 75px 95px;
+    }
+
+    .instagram_pict div a {
+        height: 200px;
+        width: 200px;
+    }
+
+    .footer_content {
+        margin: 50px auto 0 50px;
+    }
+
+    .amps_top {
+        margin: 0 20px 0 20px;
+    }
+
+    .products3:nth-child(1) a:nth-child(1) {
+        height: 270px;
+    }
+
+    .products3:nth-child(1) a:nth-child(1):hover {
+        height: 270px;
+    }
+
+    .products3:nth-child(2) a:nth-child(1) {
+        height: 270px;
+    }
+
+    .products3:nth-child(2) a:nth-child(1):hover {
+        height: 270px;
+    }
+
+    .products3:nth-child(3) a:nth-child(1) {
+        height: 270px;
+    }
+
+    .products3:nth-child(3) a:nth-child(1):hover {
+        height: 270px;
+    }
+
+    .find_out {
+        margin-top: 40px;
+    }
+
+    .amps_container div div h3 {
+        margin-top: 20px;
+    }
+
+    .products2:nth-child(1) a:nth-child(1) {
+        height: 270px;
+    }
+
+    .products2:nth-child(1) a:nth-child(1):hover {
+        height: 270px;
+    }
+
+    .products2:nth-child(2) a:nth-child(1) {
+        height: 270px;
+    }
+
+    .products2:nth-child(2) a:nth-child(1):hover {
+        height: 270px;
+    }
+
+    #Iron1 {
+        height: 270px;
+    }
+
+    #Iron1:hover {
+        height: 270px;
+    }
+
+    #Iron2 {
+        height: 270px;
+    }
+
+    #Iron2:hover {
+        height: 270px;
+    }
+
+    #Cab {
+        height: 270px;
+    }
+
+    #Cab:hover {
+        height: 270px;
+    }
+
+    .artists {
+        margin: 75px 30px 75px 30px;
+    }
+
+    .contact_content {
+        margin: 100px 30px 100px 30px;
+    }
+
+    .contact_staff {
+        margin: 100px 30px 100px 30px;
+    }
+
+    .message_us {
+        margin: 100px 30px 100px 30px;
+    }
+
+    .dealers_container {
+        margin: 0 30px 0 30px;
+    }
+
+    .map iframe {
+        width: 600px;
+    }
+
+    .media_container {
+        margin: 0 30px 0 30px;
+    }
+
+    .video iframe {
+        height: 450px;
+    }
+
+    .video h4 {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .main_logo {
+        height: 50px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    .menu_adapt:hover ul {
+        display: block;
+    }
+
+    .menu_adapt:hover {
+        border: #66cccb solid 1px;
+        border-radius: 5px;
+    }
+
+    .menu_adapt ul li a:hover {
+        background-color: #66cccb;
+        color: #fafafa;
+    }
+
+    .parallax_header {
+        font-size: 36px;
+        width: 100%;
+        text-align: center;
+        margin: 15px auto;
+    }
+
+    .main_info {
+        margin: -150px 0 0 0;
+    }
+
+    .parallax_content {
+        font-size: 16px;
+        line-height: 28px;
+        width: 100%;
+        text-align: center;
+        margin: 25px auto;
+    }
+
+    .parallax_btn {
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+        letter-spacing: 3px;
+        margin: 15px auto;
+    }
+
+    .amplifier {
+        width: 600px;
+        height: 380px;
+    }
+
+    .about_wrap {
+        display: block;
+    }
+
+    .about_wrap div p {
+        margin: 0 30px 0 0;
+        text-align: center;
+    }
+
+    .container1 {
+        width: 100%;
+        background: #fafafa;
+    }
+
+    .about_wrap div h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .about_menu {
+        display: flex;
+        max-width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        font-weight: 600;
+        font-size: 16px;
+        margin-right: 50px;
+    }
+
+    .container_image {
+        flex-direction: column;
+    }
+
+    .container_image div {
+        height: 400px;
+        width: 100%;
+    }
+
+    .featured {
+        font-size: 28px;
+    }
+
+    .carousel_content h3 {
+        font-size: 28px;
+    }
+
+    .carousel_content p {
+        font-size: 16px;
+    }
+
+    .carousel_content a {
+        font-size: 20px;
+    }
+
+    .carousel {
+        width: 75%;
+    }
+
+    .instagram_wrap p:nth-child(1) {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .instagram_wrap p:nth-child(2) {
+        margin: 0 0 25px 95px;
+    }
+
+    .instagram_pict div a {
+        height: 280px;
+        width: 320px;
+    }
+
+    #social {
+        margin-top: -100px;
+    }
+
+    .parallax_header2 {
+        font-size: 28px;
+    }
+
+    .parallax_effect_join {
+        height: 100vh;
+    }
+
+    .parallax_content2 {
+        font-size: 16px;
+    }
+
+    .parallax_header_pr {
+        font-size: 44px;
+    }
+
+    .amps_top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .products3 {
+        width: 400px;
+    }
+
+    .products3:nth-child(1) a:nth-child(1) {
+        height: 400px;
+    }
+
+    .products3:nth-child(1) a:nth-child(1):hover {
+        height: 400px;
+    }
+
+    .products3:nth-child(2) a:nth-child(1) {
+        height: 400px;
+    }
+
+    .products3:nth-child(2) a:nth-child(1):hover {
+        height: 400px;
+    }
+
+    .products3:nth-child(3) a:nth-child(1) {
+        height: 400px;
+    }
+
+    .products3:nth-child(3) a:nth-child(1):hover {
+        height: 400px;
+    }
+
+    .find_out {
+        margin-top: 40px;
+    }
+
+    .amps_container div div h3 {
+        margin-top: 20px;
+    }
+
+    .products2:nth-child(1) a:nth-child(1) {
+        height: 400px;
+    }
+
+    .products2:nth-child(1) a:nth-child(1):hover {
+        height: 400px;
+    }
+
+    .products2:nth-child(2) a:nth-child(1) {
+        height: 400px;
+    }
+
+    .products2:nth-child(2) a:nth-child(1):hover {
+        height: 400px;
+    }
+
+    #Iron1 {
+        height: 400px;
+    }
+
+    #Iron1:hover {
+        height: 400px;
+    }
+
+    #Iron2 {
+        height: 400px;
+    }
+
+    #Iron2:hover {
+        height: 400px;
+    }
+
+    #Cab {
+        height: 400px;
+    }
+
+    #Cab:hover {
+        height: 270px;
+    }
+
+    .amps_container div div h3 {
+        text-align: center;
+    }
+
+    .amps_container div div div {
+        text-align: center;
+    }
+
+    .find_out {
+        float: none;
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+        margin: 0 0 75px 0;
+        padding-right: 30px;
+    }
+
+    .amps_bottom {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 20px 0 20px;
+    }
+
+    .products2 {
+        width: 400px;
+    }
+
+    .amps_bottom .products2:nth-child(2) {
+        margin: 0;
+    }
+
+    .amps_bottom .products2:nth-child(1) {
+        margin: 0;
+    }
+
+    .artists_list {
+        column-count: 1;
+    }
+
+    .artists_list li {
+        text-align: center;
+        display: block;
+    }
+
+    .artists_list li img {
+        border-radius: 200px;
+        width: 300px;
+        height: auto;
+        margin: 0 0 50px 0;
+    }
+
+    .map_container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .dealers_list {
+        height: 300px;
+        overflow: auto;
+        width: 100%;
+        margin-bottom: 75px;
+    }
+
+    .map {
+        text-align: center;
+    }
+
+    .contact_staff {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact_staff div h5 {
+        margin: 0 0 10px 0;
+        text-align: center;
+    }
+
+    .contact_staff div a {
+        margin-bottom: 30px;
+        display: block;
+        text-align: center;
+    }
+
+    .message_us h1 {
+        font-size: 28px;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin: 0 0 75px 0;
+        animation: Myanimation2 1.7s;
+        text-align: center;
+    }
+
+    .contact_staff div:nth-child(3) {
+        margin-right: 0;
+    }
+
+    .submit_message_us {
+        float: none;
+        text-align: center;
+        margin: 30px auto 0 auto;
+        display: block;
+    }
+
+    .video iframe {
+        height: 350px;
+    }
+
+    .video h4 {
+        font-size: 24px;
+    }
+
+}
+
+
+/* margin-right: 20%; */
